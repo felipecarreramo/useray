@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    var appModel:AppModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.appModel?.importUsers(({
+            println(self.appModel?.loadUsers())
+        }))
+        
     }
 
     override func didReceiveMemoryWarning() {

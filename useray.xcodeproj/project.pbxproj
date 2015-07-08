@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141F6C2F741C30243A040C5D /* Pods_useray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECA93E6E6F27A23AE6A6CF3 /* Pods_useray.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		511E78108BA79DAB45551F1B /* libPods-useray.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7034855938DECE46E30400B1 /* libPods-useray.a */; };
 		88B7C3B91B4D813700292987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7C3B81B4D813700292987 /* AppDelegate.swift */; };
 		88B7C3CF1B4D813700292987 /* userayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7C3CE1B4D813700292987 /* userayTests.swift */; };
 		88F3E5CE1B4D849F007663AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5CD1B4D849F007663AC /* ViewController.swift */; };
 		88F3E5D01B4D84AE007663AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F3E5CF1B4D84AE007663AC /* Images.xcassets */; };
 		88F3E5D51B4D84B8007663AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F3E5D11B4D84B8007663AC /* LaunchScreen.xib */; };
 		88F3E5D61B4D84B8007663AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F3E5D31B4D84B8007663AC /* Main.storyboard */; };
+		88F3E5E01B4D92B7007663AC /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5DF1B4D92B7007663AC /* AppModel.swift */; };
+		88F3E5E31B4D92D0007663AC /* useray.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5E11B4D92D0007663AC /* useray.xcdatamodeld */; };
+		88F3E5F91B4D9A8E007663AC /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5F81B4D9A8E007663AC /* Company.swift */; };
+		88F3E5FB1B4D9A8E007663AC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5FA1B4D9A8E007663AC /* Address.swift */; };
+		88F3E5FD1B4D9A8E007663AC /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5FC1B4D9A8E007663AC /* Geo.swift */; };
+		88F3E5FF1B4D9A8E007663AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5FE1B4D9A8E007663AC /* User.swift */; };
+		88F3E6011B4D9D41007663AC /* UserClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E6001B4D9D41007663AC /* UserClientAPI.swift */; };
+		88F3E6451B4DD450007663AC /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E6441B4DD450007663AC /* LocalDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		5EABE77C564E2236FABAC9BC /* Pods-useray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-useray.debug.xcconfig"; path = "Pods/Target Support Files/Pods-useray/Pods-useray.debug.xcconfig"; sourceTree = "<group>"; };
+		7034855938DECE46E30400B1 /* libPods-useray.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-useray.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B7C3B31B4D813700292987 /* useray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = useray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B7C3B71B4D813700292987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B7C3B81B4D813700292987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,8 +47,16 @@
 		88F3E5CF1B4D84AE007663AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = view/Images.xcassets; sourceTree = "<group>"; };
 		88F3E5D21B4D84B8007663AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = view/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		88F3E5D41B4D84B8007663AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = view/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88F3E5DF1B4D92B7007663AC /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppModel.swift; path = model/Data/AppModel.swift; sourceTree = "<group>"; };
+		88F3E5E21B4D92D0007663AC /* useray.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = useray.xcdatamodel; sourceTree = "<group>"; };
+		88F3E5F81B4D9A8E007663AC /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = model/Data/Company.swift; sourceTree = "<group>"; };
+		88F3E5FA1B4D9A8E007663AC /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = model/Data/Address.swift; sourceTree = "<group>"; };
+		88F3E5FC1B4D9A8E007663AC /* Geo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geo.swift; path = model/Data/Geo.swift; sourceTree = "<group>"; };
+		88F3E5FE1B4D9A8E007663AC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = model/Data/User.swift; sourceTree = "<group>"; };
+		88F3E6001B4D9D41007663AC /* UserClientAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserClientAPI.swift; path = model/Store/UserClientAPI.swift; sourceTree = "<group>"; };
+		88F3E6031B4DA066007663AC /* RestKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RestKit-Bridging-Header.h"; path = "model/Utils/RestKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		88F3E6441B4DD450007663AC /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalDataManager.swift; path = model/Store/LocalDataManager.swift; sourceTree = "<group>"; };
 		D1F74DC69F3E94EE41BCA829 /* Pods-useray.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-useray.release.xcconfig"; path = "Pods/Target Support Files/Pods-useray/Pods-useray.release.xcconfig"; sourceTree = "<group>"; };
-		FECA93E6E6F27A23AE6A6CF3 /* Pods_useray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_useray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				141F6C2F741C30243A040C5D /* Pods_useray.framework in Frameworks */,
+				511E78108BA79DAB45551F1B /* libPods-useray.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +90,7 @@
 		60D7FCA9B957C36F12A0A07A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FECA93E6E6F27A23AE6A6CF3 /* Pods_useray.framework */,
+				7034855938DECE46E30400B1 /* libPods-useray.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +155,10 @@
 		88F3E5CA1B4D8446007663AC /* model */ = {
 			isa = PBXGroup;
 			children = (
+				88F3E6021B4DA036007663AC /* Utils */,
+				88F3E5DC1B4D85D0007663AC /* Data */,
+				88F3E5D71B4D8550007663AC /* Store */,
+				88F3E5E11B4D92D0007663AC /* useray.xcdatamodeld */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -160,6 +181,35 @@
 			name = controller;
 			sourceTree = "<group>";
 		};
+		88F3E5D71B4D8550007663AC /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				88F3E6001B4D9D41007663AC /* UserClientAPI.swift */,
+				88F3E6441B4DD450007663AC /* LocalDataManager.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		88F3E5DC1B4D85D0007663AC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				88F3E5DF1B4D92B7007663AC /* AppModel.swift */,
+				88F3E5FE1B4D9A8E007663AC /* User.swift */,
+				88F3E5FC1B4D9A8E007663AC /* Geo.swift */,
+				88F3E5FA1B4D9A8E007663AC /* Address.swift */,
+				88F3E5F81B4D9A8E007663AC /* Company.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		88F3E6021B4DA036007663AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				88F3E6031B4DA066007663AC /* RestKit-Bridging-Header.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,7 +221,6 @@
 				88B7C3AF1B4D813700292987 /* Sources */,
 				88B7C3B01B4D813700292987 /* Frameworks */,
 				88B7C3B11B4D813700292987 /* Resources */,
-				A2044989C5144B82F4B771C1 /* Embed Pods Frameworks */,
 				1953F136E05291918DBD624B /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -289,21 +338,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A2044989C5144B82F4B771C1 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-useray/Pods-useray-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -313,6 +347,14 @@
 			files = (
 				88F3E5CE1B4D849F007663AC /* ViewController.swift in Sources */,
 				88B7C3B91B4D813700292987 /* AppDelegate.swift in Sources */,
+				88F3E5E31B4D92D0007663AC /* useray.xcdatamodeld in Sources */,
+				88F3E6451B4DD450007663AC /* LocalDataManager.swift in Sources */,
+				88F3E5E01B4D92B7007663AC /* AppModel.swift in Sources */,
+				88F3E5FF1B4D9A8E007663AC /* User.swift in Sources */,
+				88F3E5F91B4D9A8E007663AC /* Company.swift in Sources */,
+				88F3E5FB1B4D9A8E007663AC /* Address.swift in Sources */,
+				88F3E6011B4D9D41007663AC /* UserClientAPI.swift in Sources */,
+				88F3E5FD1B4D9A8E007663AC /* Geo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +487,7 @@
 				INFOPLIST_FILE = useray/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "useray/model/Utils/RestKit-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -456,6 +499,7 @@
 				INFOPLIST_FILE = useray/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "useray/model/Utils/RestKit-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -524,6 +568,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		88F3E5E11B4D92D0007663AC /* useray.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				88F3E5E21B4D92D0007663AC /* useray.xcdatamodel */,
+			);
+			currentVersion = 88F3E5E21B4D92D0007663AC /* useray.xcdatamodel */;
+			name = useray.xcdatamodeld;
+			path = model/useray.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 88B7C3AB1B4D813700292987 /* Project object */;
 }
