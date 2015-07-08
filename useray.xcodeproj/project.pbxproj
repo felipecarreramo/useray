@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141F6C2F741C30243A040C5D /* Pods_useray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECA93E6E6F27A23AE6A6CF3 /* Pods_useray.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		88B7C3B91B4D813700292987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7C3B81B4D813700292987 /* AppDelegate.swift */; };
 		88B7C3BB1B4D813700292987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7C3BA1B4D813700292987 /* ViewController.swift */; };
 		88B7C3BE1B4D813700292987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B7C3BC1B4D813700292987 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EABE77C564E2236FABAC9BC /* Pods-useray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-useray.debug.xcconfig"; path = "Pods/Target Support Files/Pods-useray/Pods-useray.debug.xcconfig"; sourceTree = "<group>"; };
 		88B7C3B31B4D813700292987 /* useray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = useray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B7C3B71B4D813700292987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B7C3B81B4D813700292987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		88B7C3C81B4D813700292987 /* userayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = userayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B7C3CD1B4D813700292987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B7C3CE1B4D813700292987 /* userayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userayTests.swift; sourceTree = "<group>"; };
+		D1F74DC69F3E94EE41BCA829 /* Pods-useray.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-useray.release.xcconfig"; path = "Pods/Target Support Files/Pods-useray/Pods-useray.release.xcconfig"; sourceTree = "<group>"; };
+		FECA93E6E6F27A23AE6A6CF3 /* Pods_useray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_useray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141F6C2F741C30243A040C5D /* Pods_useray.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26D4A8943E065DDE4CD72875 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EABE77C564E2236FABAC9BC /* Pods-useray.debug.xcconfig */,
+				D1F74DC69F3E94EE41BCA829 /* Pods-useray.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		60D7FCA9B957C36F12A0A07A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FECA93E6E6F27A23AE6A6CF3 /* Pods_useray.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88B7C3AA1B4D813700292987 = {
 			isa = PBXGroup;
 			children = (
 				88B7C3B51B4D813700292987 /* useray */,
 				88B7C3CB1B4D813700292987 /* userayTests */,
 				88B7C3B41B4D813700292987 /* Products */,
+				26D4A8943E065DDE4CD72875 /* Pods */,
+				60D7FCA9B957C36F12A0A07A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B7C3D21B4D813700292987 /* Build configuration list for PBXNativeTarget "useray" */;
 			buildPhases = (
+				878683C601594E11DB684478 /* Check Pods Manifest.lock */,
 				88B7C3AF1B4D813700292987 /* Sources */,
 				88B7C3B01B4D813700292987 /* Frameworks */,
 				88B7C3B11B4D813700292987 /* Resources */,
+				A2044989C5144B82F4B771C1 /* Embed Pods Frameworks */,
+				1953F136E05291918DBD624B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1953F136E05291918DBD624B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-useray/Pods-useray-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		878683C601594E11DB684478 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2044989C5144B82F4B771C1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-useray/Pods-useray-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88B7C3AF1B4D813700292987 /* Sources */ = {
@@ -340,6 +415,7 @@
 		};
 		88B7C3D31B4D813700292987 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EABE77C564E2236FABAC9BC /* Pods-useray.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = useray/Info.plist;
@@ -350,6 +426,7 @@
 		};
 		88B7C3D41B4D813700292987 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F74DC69F3E94EE41BCA829 /* Pods-useray.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = useray/Info.plist;
@@ -411,6 +488,7 @@
 				88B7C3D41B4D813700292987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88B7C3D51B4D813700292987 /* Build configuration list for PBXNativeTarget "userayTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +497,7 @@
 				88B7C3D71B4D813700292987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,7 @@
+
+#cocoapods ignoring files
+
+Pods
+Podfile.lock
+useray.xcworkspace
+useray.xcodeproj/project.xcworkspace/xcuserdata/*
