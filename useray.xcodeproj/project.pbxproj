@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		511E78108BA79DAB45551F1B /* libPods-useray.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7034855938DECE46E30400B1 /* libPods-useray.a */; };
+		7E9623681B4E0AB200308EA2 /* Useray.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E9623661B4E0AB200308EA2 /* Useray.xcdatamodeld */; };
 		88B7C3B91B4D813700292987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7C3B81B4D813700292987 /* AppDelegate.swift */; };
 		88B7C3CF1B4D813700292987 /* userayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7C3CE1B4D813700292987 /* userayTests.swift */; };
 		88F3E5CE1B4D849F007663AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5CD1B4D849F007663AC /* ViewController.swift */; };
@@ -15,7 +16,6 @@
 		88F3E5D51B4D84B8007663AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F3E5D11B4D84B8007663AC /* LaunchScreen.xib */; };
 		88F3E5D61B4D84B8007663AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F3E5D31B4D84B8007663AC /* Main.storyboard */; };
 		88F3E5E01B4D92B7007663AC /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5DF1B4D92B7007663AC /* AppModel.swift */; };
-		88F3E5E31B4D92D0007663AC /* useray.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5E11B4D92D0007663AC /* useray.xcdatamodeld */; };
 		88F3E5F91B4D9A8E007663AC /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5F81B4D9A8E007663AC /* Company.swift */; };
 		88F3E5FB1B4D9A8E007663AC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5FA1B4D9A8E007663AC /* Address.swift */; };
 		88F3E5FD1B4D9A8E007663AC /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3E5FC1B4D9A8E007663AC /* Geo.swift */; };
@@ -37,6 +37,7 @@
 /* Begin PBXFileReference section */
 		5EABE77C564E2236FABAC9BC /* Pods-useray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-useray.debug.xcconfig"; path = "Pods/Target Support Files/Pods-useray/Pods-useray.debug.xcconfig"; sourceTree = "<group>"; };
 		7034855938DECE46E30400B1 /* libPods-useray.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-useray.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9623671B4E0AB200308EA2 /* Useray.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Useray.xcdatamodel; sourceTree = "<group>"; };
 		88B7C3B31B4D813700292987 /* useray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = useray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B7C3B71B4D813700292987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B7C3B81B4D813700292987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		88F3E5D21B4D84B8007663AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = view/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		88F3E5D41B4D84B8007663AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = view/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88F3E5DF1B4D92B7007663AC /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppModel.swift; path = model/Data/AppModel.swift; sourceTree = "<group>"; };
-		88F3E5E21B4D92D0007663AC /* useray.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = useray.xcdatamodel; sourceTree = "<group>"; };
 		88F3E5F81B4D9A8E007663AC /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = model/Data/Company.swift; sourceTree = "<group>"; };
 		88F3E5FA1B4D9A8E007663AC /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = model/Data/Address.swift; sourceTree = "<group>"; };
 		88F3E5FC1B4D9A8E007663AC /* Geo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geo.swift; path = model/Data/Geo.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				88F3E6021B4DA036007663AC /* Utils */,
 				88F3E5DC1B4D85D0007663AC /* Data */,
 				88F3E5D71B4D8550007663AC /* Store */,
-				88F3E5E11B4D92D0007663AC /* useray.xcdatamodeld */,
+				7E9623661B4E0AB200308EA2 /* Useray.xcdatamodeld */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -347,13 +347,13 @@
 			files = (
 				88F3E5CE1B4D849F007663AC /* ViewController.swift in Sources */,
 				88B7C3B91B4D813700292987 /* AppDelegate.swift in Sources */,
-				88F3E5E31B4D92D0007663AC /* useray.xcdatamodeld in Sources */,
 				88F3E6451B4DD450007663AC /* LocalDataManager.swift in Sources */,
 				88F3E5E01B4D92B7007663AC /* AppModel.swift in Sources */,
 				88F3E5FF1B4D9A8E007663AC /* User.swift in Sources */,
 				88F3E5F91B4D9A8E007663AC /* Company.swift in Sources */,
 				88F3E5FB1B4D9A8E007663AC /* Address.swift in Sources */,
 				88F3E6011B4D9D41007663AC /* UserClientAPI.swift in Sources */,
+				7E9623681B4E0AB200308EA2 /* Useray.xcdatamodeld in Sources */,
 				88F3E5FD1B4D9A8E007663AC /* Geo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,14 +570,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		88F3E5E11B4D92D0007663AC /* useray.xcdatamodeld */ = {
+		7E9623661B4E0AB200308EA2 /* Useray.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				88F3E5E21B4D92D0007663AC /* useray.xcdatamodel */,
+				7E9623671B4E0AB200308EA2 /* Useray.xcdatamodel */,
 			);
-			currentVersion = 88F3E5E21B4D92D0007663AC /* useray.xcdatamodel */;
-			name = useray.xcdatamodeld;
-			path = model/useray.xcdatamodeld;
+			currentVersion = 7E9623671B4E0AB200308EA2 /* Useray.xcdatamodel */;
+			name = Useray.xcdatamodeld;
+			path = model/Useray.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -22,25 +22,39 @@ class UserClientAPI {
     
     private func  setupRestKit()
     {
+        
+//        NSManagedObjectModel *managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+//        RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:managedObjectModel];
+//        NSError *error = nil;
+//        BOOL success = RKEnsureDirectoryExistsAtPath(RKApplicationDataDirectory(), &error);
+//        if (! success) {
+//            RKLogError(@"Failed to create Application Data Directory at path '%@': %@", RKApplicationDataDirectory(), error);
+//        }
+//        NSString *path = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"Store.sqlite"];
+//        NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:path fromSeedDatabaseAtPath:nil withConfiguration:nil options:nil error:&error];
+//        if (! persistentStore) {
+//            RKLogError(@"Failed adding persistent store at path '%@': %@", path, error);
+//        }
+//        [managedObjectStore createManagedObjectContexts];
+        
+
     
         let baseURL:NSURL = NSURL(string: baseURLString)!
         objectManager = RKObjectManager(baseURL: baseURL)
+        
         var managedObjectModel = NSManagedObjectModel.mergedModelFromBundles(nil)
         var managedObjectStore = RKManagedObjectStore(managedObjectModel: managedObjectModel)
-       
-        
         managedObjectStore.createPersistentStoreCoordinator()
         var error:NSError?
-        let persistentStore: NSPersistentStore = managedObjectStore.addSQLitePersistentStoreAtPath(self.storePath(), fromSeedDatabaseAtPath: self.databasePath(), withConfiguration: nil, options: nil, error: &error)
-        
-        if error != nil {
-            
-            NSLog("Failed to add persistent store with Error: %@", error!)
+        let success = RKEnsureDirectoryExistsAtPath(RKApplicationDataDirectory(), &error)
+        if !success {
+            NSLog("Failed to create application Data directory at path %@: %@",RKApplicationDataDirectory(), error!)
         }
         
+        let path = RKApplicationDataDirectory()+"/Useray.sqlite"
+        let persistentStore = managedObjectStore.addSQLitePersistentStoreAtPath(path, fromSeedDatabaseAtPath: nil, withConfiguration: nil, options: nil, error: &error)
+
         managedObjectStore.createManagedObjectContexts()
-        managedObjectStore.managedObjectCache = RKInMemoryManagedObjectCache(managedObjectContext: managedObjectStore.persistentStoreManagedObjectContext)
-        
         objectManager!.managedObjectStore = managedObjectStore
         
         managedObjectContext = managedObjectStore.persistentStoreManagedObjectContext
@@ -87,12 +101,12 @@ class UserClientAPI {
     
     private func storePath() -> String
     {
-        return RKApplicationDataDirectory().stringByAppendingPathComponent("useray.sqlite")
+        return RKApplicationDataDirectory().stringByAppendingPathComponent("Useray.sqlite")
     }
     
     private func databasePath() -> String
     {
-        let fileUrl = NSBundle.mainBundle().pathForResource("useray", ofType: "momd")!
+        let fileUrl = NSBundle.mainBundle().pathForResource("Useray", ofType: "momd")!
         return fileUrl
     }
     

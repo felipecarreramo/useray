@@ -19,7 +19,5 @@ class User: NSManagedObject {
     @NSManaged var username: String
     @NSManaged var website: String
     @NSManaged var email: String
-    @NSManaged var address: Address?
-    @NSManaged var company: Company?
 
 }

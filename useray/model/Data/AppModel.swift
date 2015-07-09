@@ -13,11 +13,14 @@ class AppModel {
     
     var managedObjectContext:NSManagedObjectContext?
     var userAPI:UserClientAPI?
+    var localDataManager:LocalDataManager?
     
     init()
     {
         userAPI = UserClientAPI()
         self.managedObjectContext = userAPI!.managedObjectContext
+        localDataManager = LocalDataManager.sharedInstance
+        localDataManager?.managedObjectContext = userAPI!.managedObjectContext
     }
     
     func importUsers(completion:()-> Void)
@@ -29,9 +32,9 @@ class AppModel {
         }))
     }
     
-    func loadUsers() -> [NSManagedObject]
+    func loadUsers() -> [AnyObject]
     {
-        return LocalDataManager.sharedInstance.loadUsers()
+        return localDataManager!.loadUsers()
     }
     
 }

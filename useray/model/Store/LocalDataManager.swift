@@ -14,11 +14,12 @@ class LocalDataManager {
     var managedObjectContext:NSManagedObjectContext?
     static let sharedInstance = LocalDataManager()
     
-    func loadUsers() -> [NSManagedObject]
+    func loadUsers() -> [AnyObject]
     {
-        let fetchRequest:NSFetchRequest = NSFetchRequest(entityName: "User")
+        
+        var fetchRequest = NSFetchRequest(entityName: "User")
         var error : NSError?
-        let fetchedResults = self.managedObjectContext!.executeFetchRequest(fetchRequest, error: &error) as? [NSManagedObject]
+        var fetchedResults = self.managedObjectContext!.executeFetchRequest(fetchRequest, error: &error)
         return fetchedResults!
     }
     

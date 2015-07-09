@@ -3,7 +3,7 @@ platform :ios, '8.0'
 
 target 'useray' do
 
-	pod 'RestKit', '~> 0.24.0'
+	pod 'RestKit', '~> 0.20.0'
 
 end
 
